@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div v-if="showBox">
+            <p>{{ title }} - {{ author }} - {{ age }}</p>
+        </div>
+        <button @click="changeTitle('changechange')">Changetitle</button>
+        <button @click="showBox=!showBox">
+            <span v-if="showBox">Hide</span>
+            <span v-else>Show</span>
+        </button>
+        <!-- v-show display=block when showBox=true  -->
+        <div v-show="showBox">Display-block</div> 
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
