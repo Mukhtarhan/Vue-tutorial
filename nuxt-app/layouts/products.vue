@@ -17,7 +17,7 @@
                     <NuxtLink to="/about">About</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/products">Merch</NuxtLink>
+                    <NuxtLink to="/products">Products</NuxtLink>
                 </li>
             </ul>
         </footer>
